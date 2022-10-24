@@ -1,0 +1,64 @@
+
+
+body {
+    background-image: url("images/finale.webp");
+    color: black;
+    background-size: cover;
+}
+
+
+header {
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+
+header a {
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 2.5em;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+p {
+    line-height: 2em;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 300px;
+    border-style: double;
+    border-radius: 5%;
+    margin-left: 20em;
+    text-align: center;
+    background-color: white;
+}
+
+
+.moves {
+    text-align: center;
+    font-size: 2em;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+ul {
+    text-align: center;
+    margin-left: 0;
+    padding-left: 0;
+    padding-right: 10em;
+
+}
+
+ul p {
+    text-align: center;
+}

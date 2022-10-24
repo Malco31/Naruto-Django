@@ -1,0 +1,35 @@
+
+
+body {
+    background-image: url("images/konoha2.webp");
+    background-size: cover;
+}
+
+header {
+    text-align: center;
+    text-decoration: underline;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+ul {
+    text-align: center;
+}
+
+
+p {
+    background-color: white;
+    line-height: 5em;
+    text-decoration: none;
+    font-size: 1.5em;
+    width: 200px;
+    border-style: double;
+    border-radius: 5%;
+    margin-left: 20em;
+}
+
+p a {
+    text-decoration: none;
+    color: black;
+}

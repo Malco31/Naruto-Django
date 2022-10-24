@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static "page2.css" %}" />
+  </head>
+  <body>
+    <header><a href="/">Back</a></header>
+    <main>
+      {% for key, value in context.items %} {% if key == group %}
+        
+        <h1>{{ value.title }}</h1>
+        <p>{{ value.description}}</p>
+        <h1 class="moves">Signature Jutsu</h1>
+        {% for people in value.moves %}
+        <ul>
+          <p>{{ people }}</p>
+        </ul>
+        {% endfor %}
+
+        {% comment %} Trying to get background to work {% endcomment %}
+        {% comment %} {% url "/group/{{ value.title }}" as my_view %}
+        {% if request.path == my_view %}
+        <style>
+          body {
+              background-image: url({{ value.pic }});
+          }
+        </style>
+        {% endif %} {% endcomment %}
+        {% comment %}  {% endcomment %}
+
+      {% endif %} {% endfor %}
+    </main>
+  </body>       
+</html>
